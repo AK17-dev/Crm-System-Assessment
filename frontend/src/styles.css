@@ -1,0 +1,127 @@
+:root {
+    --bg: #f8f9fb;
+    --card: #fff;
+    --muted: #666;
+    --accent: #2b6df6;
+    --danger: #d9534f
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: var(--bg);
+    color: #111
+}
+
+.app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column
+}
+
+.nav {
+    background: #fff;
+    padding: 10px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee
+}
+
+.nav a {
+    margin-right: 12px;
+    color: var(--accent);
+    text-decoration: none
+}
+
+.nav-right .btn {
+    margin-left: 8px
+}
+
+.main {
+    padding: 20px;
+    flex: 1
+}
+
+.page {
+    max-width: 800px;
+    margin: 0 auto
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px
+}
+
+.form.small {
+    gap: 6px
+}
+
+label {
+    font-size: 14px;
+    color: var(--muted)
+}
+
+input,
+select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px
+}
+
+.btn {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer
+}
+
+.btn.small {
+    padding: 6px 8px
+}
+
+.btn.muted {
+    background: #eee;
+    color: #333
+}
+
+.btn.danger {
+    background: var(--danger)
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.card {
+    background: var(--card);
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #eee
+}
+
+.actions {
+    margin-top: 8px;
+    display: flex;
+    gap: 8px
+}
+
+.muted {
+    color: var(--muted);
+    font-size: 13px
+}
+
+.error {
+    color: var(--danger);
+    margin-top: 8px
+}
